@@ -1,6 +1,7 @@
 require 'pry'
 def nyc_pigeon_organizer(data)
   # write your code here!
+<<<<<<< HEAD
  new_hash = {}
  hash_by_color = {}
  
@@ -45,3 +46,21 @@ end
   
  new_hash
 end 
+=======
+  new_hash.new 
+  
+  data.each do | attribute, key|
+    
+    array_list = key[0]
+    
+    
+    new_hash = 
+   binding.pry
+   
+  end
+  
+  
+  
+end
+
+>>>>>>> d3f8c41bb5c925799067206956270e8204757db4

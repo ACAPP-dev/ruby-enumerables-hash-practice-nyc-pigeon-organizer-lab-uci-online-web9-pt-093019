@@ -59,11 +59,42 @@ def nyc_pigeon_organizer(data)
   #binding.pry
   
 end
+    pigeon_name = name_array[i]
+   #binding.pry 
+   if new_hash.has_key?(pigeon_name) && new_hash[pigeon_name].has_key?(attribute)
+     
+     new_hash[pigeon_name][attribute] => {data_hash_attribute}
+     
+     elsif new_hash.has_key?(pigeon_name)
+     
+      new_hash[pigeon_name] = [attribute]
+      # binding.pry
+     else
+      new_hash[pigeon_name] = {
+       attribute => ["#{data_hash_attribute}"] }
+     binding.pry
+    end  
+    
+    #binding.pry 
+    
+    i += 1 
+    end
+    
+  
+ 
+  
+  
+  
+  end
+
   
   
   
   
-  
+
+=======
+end
+>>>>>>> d3f8c41bb5c925799067206956270e8204757db4
   
   
  new_hash
@@ -72,6 +103,7 @@ end
   
   
   # 1st test make each attribute a key/hash and key and array of bird name 
+<<<<<<< HEAD
 #def first_try(data)  
  # data[:color].each do |color_name, array|
   #  i = 0 
@@ -100,3 +132,35 @@ end
   
 
 p nyc_pigeon_organizer(pigeon_data)
+=======
+def first_try(data)  
+  data[:color].each do |color_name, array|
+    i = 0 
+    while i < array.length do
+    #binding.pry
+    
+    pigeon_name = array[i]
+    
+   if hash_by_color.has_key?(array[i])
+      hash_by_color[array[i]][:color] << "#{color_name}"
+      # binding.pry
+  else
+     hash_by_color[array[i]] = {
+       :color => ["#{color_name}"]
+     }
+  end  
+    
+    #binding.pry 
+    
+    i += 1 
+    end
+    
+  end
+end  
+  
+  
+
+
+p nyc_pigeon_organizer(pigeon_data)
+
+>>>>>>> d3f8c41bb5c925799067206956270e8204757db4
